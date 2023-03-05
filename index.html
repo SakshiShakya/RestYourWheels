@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <title>RestYourWheels</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        :root{
+           --navbar-height: 59px;
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            position: sticky;
+            font-family: 'Roboto', sans-serif;
+        }
+        #navbar::before{
+            content: "";
+            background-color: black;
+            top: 0px;
+            left: 0px;
+            height: 100%;   
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.6;
+        }
+        #logo{
+            margin: 10px 3px;
+        }
+        #logo img{
+            height: 50px;
+            border-radius: 10px;
+            margin: 5px 20px;
+        }
+        #navbar ul{
+            display: flex;
+        }
+        #navbar ul li{
+            list-style: none;
+            font-size: 1.1rem;
+        }
+        #navbar li a{
+            color: white;
+            padding: 5px 20px;
+            text-decoration: none;
+        }
+        #navbar li a:hover{
+            color: black;
+            background-color: white;
+            border-radius: 10px;
+        }
+        #home{
+            color: white;
+            height: 470px;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 30px;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        #home::before{
+            content: "";
+            position: absolute;
+            background: url('images/parking-103.jpg') no-repeat center center/cover;
+            height: 610px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.75;
+        }
+        #home p{
+            font-size: 1.3rem;
+            text-align: center;
+            
+        }
+        .h-primary{
+            font-size: 2.8rem;
+            padding: 15px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .h-secondary{
+            font-size: 2.2rem;
+            padding: 15px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .center{
+            text-align: center;
+        }
+        
+        #home button{
+            padding: 10px;
+            margin: 10px 10px;
+            border-radius: 8px;
+            color: white;
+            background-color: rgb(50, 102, 133);
+            border: 2px solid white;
+            font-size: 1.01rem;
+            cursor: pointer;
+        }
+        #home button:hover{
+            color: rgb(50,102,133);
+            background-color: white;
+            border: 2px solid rgb(50, 102, 133);
+        }
+        #services{
+            margin: 5px 44px;
+            display: flex;
+        }
+        #services .box{
+            border: 2px solid rgb(50, 102, 133);
+            background-color: rgb(232, 237, 240);
+            padding: 25px;
+            margin: 10px 10px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        #services .box img{
+            height: 160px;
+            display: block;
+            margin: auto;
+        }
+        #client-section::before{
+            content: "";
+            position: absolute;
+            background: url('images/parking-102.jpg') no-repeat center center/cover;
+            height: 65%;
+            width: 100%;
+            z-index: -20;
+            opacity: 0.4;
+        }
+        #clients{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #client-section{
+            height: 200px;
+        }
+        #clients img{
+            height: 150px;
+            border-radius: 20px;
+        }
+        #contact-us{
+            display: flex;
+        }
+        .con-box{
+            text-align: center;
+            padding: 23px;
+            margin: 15px 17px;
+        }
+        footer{
+            background: black;
+            color: white;
+            padding: 9px 20px;
+        }       
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/image-gif1.gif" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to RestYourWheels</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, molestiae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, distinctio!</p>
+        <br>
+        <button class="btn">LOG IN/SIGN UP</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="images/qrcode.jpg" alt="">
+                <h2 class="h-secondary center">Easy Scanning</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae voluptatum quia laudantium nihil numquam magnam fugiat nemo debitis placeat?</p>
+            </div>
+            <div class="box">
+                <img src="images/smsalert.png" alt="">
+                <h2 class="h-secondary center">SMS Alerts</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae voluptatum quia laudantium nihil numquam magnam fugiat nemo debitis placeat?</p>
+            </div>
+            <div class="box">
+                <img src="images/searchpa.jpg" alt="">
+                <h2 class="h-secondary center">Hassle Free</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae voluptatum quia laudantium nihil numquam magnam fugiat nemo debitis placeat?</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="images/abeslogo.jpg" alt="">
+            </div>
+        </div>
+        <hr>
+        <hr>
+        <div id="contact-us">
+            <div class="con-box">
+                <h2 class="h-secondary center">Contact RestYourWheels</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit soluta, iure incidunt qui dignissimos optio.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure?</p>
+            </div>
+            <div class="con-box">
+                <h3>Our Mailing Address</h3>
+                <p>Gtb Nagar </p>
+                <p>Kingsway Camp</p>
+                <p>delhi-110009</p>
+            </div>
+            <div class="con-box">
+                <h3>Email Us</h3>
+                <p>RestYourWheels@gmail.com</p> 
+                <h3>Call us</h3>
+                <p>+91 9999999999</p>
+            </div>
+        </div>
+        <footer>
+            <div class="center">
+                copyright  &copy;  www.RestYourWheels.com  All rights reserved!
+            </div>
+        </footer>
+    </section>
+    
+</body>
+</html>
